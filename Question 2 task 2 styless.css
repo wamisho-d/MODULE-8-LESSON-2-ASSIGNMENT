@@ -1,0 +1,46 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    background-color: #333;
+}
+
+.nav-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: centers;
+}
+
+.nav-menu li {
+    margin: 0 15px;
+    position: relative;
+}
+
+.nav-menu li::before {
+    content: "\2022"; /* Unicode for bullet point */
+    color: #fff;
+    font-size: 20px;
+    position: absolute;
+    left: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 15px;
+    display: block;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-menu a:hover {
+    background-color: #575757;
+    color: #ffcc00;
+}
